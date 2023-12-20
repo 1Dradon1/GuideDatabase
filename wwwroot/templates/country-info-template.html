@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигация по странам</title>
+    <link rel="stylesheet" href="/static/css/common-styles.css">
+    <link rel="stylesheet" href="/static/css/country-info.css">
+</head>
+<body>
+    <h1>Информационный справочник по странам</h1>
+<!--    <a class="home-button" href="/markdown/index.html">&lt;&lt;Вернуться к поиску</a>-->
+    <div class="top-space">
+        <div class="country-info">
+            <div class="container main-info">
+                <div class="title">
+                    <h3>Базовая информация</h3>
+                </div>
+                <div class="info">
+                    <div class="markdown">
+                        <p>Полное наименование: </p>
+                        <p>{{ full_name }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Дата регистрации: </p>
+                        <p>{{ registration_date }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Ссылка: </p>
+                        <a href="{{ site_link }}" target="_blank">{{ site_link }}</a>
+                    </div>
+                    <div class="markdown">
+                        <p>Ссылка на поиск: </p>
+                        <a href="{{ search_link }}" target="_blank">{{ search_link }}</a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="container other-info">
+                <div class="title">
+                    <h3>Основная информация</h3>
+                </div>
+                <div class="info">
+                    <div class="markdown">
+                        <p>Основной вид деятельности: </p>
+                        <p>{{ activity_kind }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Наличие финансовой отчетности: </p>
+                        <p>{{ is_financial_report_exist }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Штат сотрудников: </p>
+                        <p>{{ employs_count }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Наличие истории: </p>
+                        <p>{{ is_history_exist }}</p>
+                    </div>
+                     <div class="markdown">
+                        <p>Сторонний сайт: </p>
+                        <p>{{ is_site_exist }}</p>
+                    </div>
+                      <div class="markdown">
+                    </div>
+                </div>
+            </div>
+            <!-- это ок -->
+            <div class="container other-info">
+                <div class="title">
+                    <h3>Структура владения</h3>
+                </div>
+                <div class="info">
+                    <div class="markdown">
+                        <p>Глобальный конечный собственник: </p>
+                        <p>{{ global_ultimate_owner }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Бенефициары: </p>
+                        <p>{{ beneficiaries }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Акционеры: </p>
+                        <p>{{ shareholders }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Доля участия: </p>
+                        <p>{{ participation_share }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Дочерние компании: </p>
+                        <p>{{ subsidiaries }}</p>
+                    </div>
+                    <div class="markdown">
+                        <p>Корпоративная группа: </p>
+                        <p>{{ corporate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-space">
+            <div class="search-bar">
+                <form class="search-bar" action="country?" method="get">
+                    <input class="" name="name"id="search" placeholder="Введите название страны">
+                </form>
+            </div>
+            <div class="search-list">
+                <ul id="search-list-id">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container user-guide">
+        <div class="title">
+            <h3>Гайд по использованию сайта</h3>
+        </div>
+        <div id="markdown-content">
+            {{ guide | safe }}
+        </div>
+    </div>
+
+    <script src="static/js/display_countries.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+.top-space{
+    width: 85vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+
+
+.home-button{
+    position: absolute;
+    align-self: start;
+    top: 35px;
+    left: 30px;
+    user-select: none;
+}
+.country-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.other-info:last-child{
+    margin-bottom: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    min-width: 450px;
+    margin-bottom: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid;
+
+}
+.markdown{
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    background-color: rgb(0, 0, 0, 0.2);
+
+    width: 49%;
+    height: auto;
+    padding-left: 1%;
+    box-shadow: inset 0 0 0 .5px #fff;
+}
+.markdown    p{
+        margin-left: 2%;
+    min-width: 20%;
+}
+.markdown a{
+    margin-left: 2%;
+    min-width: 10%;
+}
+.search-space{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+.search-bar{
+    width: 100%;
+    margin-top: 0;
+}
+.search-bar input{
+    width: 100%;
+    min-width: 100px;
+    /* border-radius: 40px; */
+    padding-left: 20px;
+}
+
+.search-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh;
+    overflow: auto;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0, 0.2);
+
+}
+
+.search-list ul{
+    height: 100%;
+    width: 100%;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.company h4{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.user-guide{
+    display:flex;
+    justify-content:center;
+    width: 85vw;
+}
+
+.user-guide div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#markdown-content img{
+    width:100%;
+}

@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+
+}
+
+body::before {
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    background-image: url('../img/Emblem_of_the_Federal_Tax_Service.svg.png');
+    background-size: contain;
+    opacity: 0.1;
+    filter: blur(5px);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+h3{
+    font-size: 26px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+input{
+    border:  1px solid;
+    border-color: rgb(71, 71, 71);
+    border-collapse: collapse;
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+}
+
+input:focus{
+    outline: none !important;
+    border:  1px solid;
+    border-color: rgb(25, 88, 166);
+}
+.search-bar{
+    margin-top: 10px;
+    display: flex;
+    height: 50px;
+    
+}
+
+
+button{
+    border:  1px solid;
+    border-color: rgb(71, 71, 71);
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+}
+button:hover{
+    outline: none !important;
+    border:  1px solid;
+    border-color: rgb(25, 88, 166);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 0;
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+ul li{
+    word-wrap: break-word;
+    transition: 0.2s;
+}
+
+ul li:hover{
+    color: rgb(56, 111, 179);
+}
+a{
+    color: aliceblue;
+    transition: 0.2s;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(56, 111, 179);
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(248, 248, 248, 0.596); 
+}
+
+.user-guide p{
+    font-size: 20px;
+}

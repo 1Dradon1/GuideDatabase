@@ -1,0 +1,6 @@
+{
+  "db_path": "guides.csv",
+  "program_path": "C:\\Users\\admin\\Documents\\GitHub\\GuideDatabase\\wwwroot",
+  "debug": "False",
+  "port": 5080
+}
